@@ -11,9 +11,7 @@ class CardGame
     front = 0
     back = 1
     data_for_cards.each_slice(2) |card|
-    #args = {description: slice[front], answer: slice[back]}
-    #@card << Card.new(args)
-      @card << Card.new(slice[front], slice[back])
+      @card << Card.new(description: slice[front], answer: slice[back])
     end
   end  
 
